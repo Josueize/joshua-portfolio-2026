@@ -26,7 +26,7 @@ function Contact() {
   return (
     <section id="contact" className={styles.contact}>
       <div className="section-wrapper">
-        <p className="section-tag">// get in touch</p>
+        <p className="section-tag">&#47;&#47; get in touch</p>
         <h2 className="section-title">Contact Me</h2>
         <div className="section-divider" />
         <div className={styles.grid}>

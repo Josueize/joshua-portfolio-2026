@@ -62,7 +62,7 @@ function Projects() {
   return (
     <section id="projects" className={styles.projects}>
       <div className="section-wrapper">
-        <p className="section-tag">// my work</p>
+        <p className="section-tag">&#47;&#47; my work</p>
         <h2 className="section-title">Projects</h2>
         <div className="section-divider" />
         <div className={styles.grid}>

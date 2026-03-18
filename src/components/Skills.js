@@ -61,7 +61,7 @@ function Skills() {
   return (
     <section id="skills" className={styles.skills}>
       <div className="section-wrapper">
-        <p className="section-tag">// what I know</p>
+        <p className="section-tag">&#47;&#47; what I know</p>
         <h2 className="section-title">Skills & Technologies</h2>
         <div className="section-divider" />
         <div className={styles.grid}>

@@ -32,7 +32,7 @@ function About() {
             </div>
           </div>
           <div className={styles.right}>
-            <p className="section-tag">// about me</p>
+            <p className="section-tag">&#47;&#47; about me</p>
             <h2 className="section-title">Who I Am</h2>
             <div className="section-divider" />
             <div className={styles.bio}>
