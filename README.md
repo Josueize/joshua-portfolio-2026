@@ -94,5 +94,6 @@ src/
 
 **Izehiuwa Igiebor Omogiate (Josue)**  
 Fullstack Web Developer | São Paulo, Brazil 🇧🇷  
+Vercel: https://joshua-portfolio-2026.vercel.app
 GitHub: [@Josueize](https://github.com/Josueize)  
 Email: izategbese1@gmail.com
