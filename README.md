@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Izehiuwa Igiebor Omogiate — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio website built with React, showcasing my projects, skills, and experience as a Fullstack Web Developer.
 
-## Available Scripts
+## 🔗 Live Demo
 
-In the project directory, you can run:
+**[View Portfolio →](https://joshua-portfolio-2026.vercel.app)**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 How to Run Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm
 
-### `npm test`
+### Steps
+```bash
+# 1. Clone the repository
+git clone https://github.com/Josueize/portfolio.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 2. Navigate to the project folder
+cd portfolio
 
-### `npm run build`
+# 3. Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 4. Start the development server
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app will open at **http://localhost:3000**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🌐 How to Deploy on Vercel
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Push this repository to GitHub
+2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
+3. Click **"New Project"** and import this repository
+4. Leave default settings and click **"Deploy"**
+5. Your live URL will be generated automatically
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Projects Showcased
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. CryptoIQ
+Real-time cryptocurrency intelligence dashboard with live market data and price tracking.
+- **Technologies:** React, JavaScript, REST APIs, CSS Modules
+- **Repository:** [github.com/Josueize/cryptoiq](https://github.com/Josueize/cryptoiq)
 
-## Learn More
+### 2. JobTrackr
+Full-featured job application tracker to manage the job search pipeline.
+- **Technologies:** React, Node.js, JavaScript, REST API
+- **Repository:** [github.com/Josueize/jobtrackr-app](https://github.com/Josueize/jobtrackr-app)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. CareerPulse
+Career growth and skill tracking platform for developers.
+- **Technologies:** React, TypeScript, Node.js, CI/CD
+- **Repository:** [github.com/Josueize/careerpulse](https://github.com/Josueize/careerpulse)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🛠 Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Framework:** React 18
+- **Styling:** CSS Modules
+- **Fonts:** Syne + Space Mono
+- **Deployment:** Vercel
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📂 Project Structure
+```
+src/
+├── components/
+│   ├── Navbar.js / Navbar.module.css
+│   ├── Hero.js / Hero.module.css
+│   ├── About.js / About.module.css
+│   ├── Projects.js / Projects.module.css
+│   ├── Skills.js / Skills.module.css
+│   ├── Contact.js / Contact.module.css
+│   └── Footer.js / Footer.module.css
+├── styles/
+│   └── global.css
+├── App.js
+└── index.js
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 👤 Author
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Izehiuwa Igiebor Omogiate (Josue)**  
+Fullstack Web Developer | São Paulo, Brazil 🇧🇷  
+GitHub: [@Josueize](https://github.com/Josueize)  
+Email: izategbese1@gmail.com
