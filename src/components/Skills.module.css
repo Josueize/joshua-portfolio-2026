@@ -1,0 +1,19 @@
+.skills { padding: var(--section-padding); background: var(--bg-secondary); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+.categoryCard { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: var(--transition); }
+.categoryCard:hover { border-color: var(--border-accent); transform: translateY(-2px); }
+.categoryTitle { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
+.categoryIcon { font-size: 1.1rem; }
+.skillsList { display: flex; flex-direction: column; gap: 1rem; }
+.skillItem { display: flex; flex-direction: column; gap: 0.4rem; }
+.skillHeader { display: flex; justify-content: space-between; align-items: center; }
+.skillName { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-secondary); }
+.skillLevel { font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-primary); }
+.bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.barFill { height: 100%; background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary)); border-radius: 2px; transition: width 1s ease; }
+.softSkills { text-align: center; }
+.softTitle { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 1.25rem; }
+.softGrid { display: flex; flex-wrap: wrap; gap: 0.65rem; justify-content: center; }
+.softPill { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-secondary); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 100px; transition: var(--transition); }
+.softPill:hover { color: var(--accent-primary); border-color: var(--border-accent); }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }

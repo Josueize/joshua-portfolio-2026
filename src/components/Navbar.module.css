@@ -1,0 +1,25 @@
+.navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.25rem 2rem; transition: all 0.4s ease; }
+.scrolled { background: rgba(1, 10, 1, 0.95); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0.85rem 2rem; }
+.inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; gap: 2rem; }
+.logo { font-family: var(--font-display); font-size: 1.25rem; font-weight: 800; color: var(--text-primary); text-decoration: none; margin-right: auto; }
+.logoAccent { color: var(--accent-primary); }
+.links { display: flex; list-style: none; gap: 0.25rem; }
+.link { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-secondary); text-decoration: none; padding: 0.4rem 0.75rem; border-radius: 4px; transition: var(--transition); }
+.link:hover { color: var(--accent-primary); background: rgba(0, 255, 65, 0.07); opacity: 1; }
+.cta { font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); border: 1px solid var(--border-accent); padding: 0.45rem 1rem; border-radius: 4px; transition: var(--transition); white-space: nowrap; }
+.cta:hover { background: rgba(0, 255, 65, 0.1); opacity: 1; }
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 2px; transition: var(--transition); }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+.mobileMenu { display: none; flex-direction: column; background: rgba(1, 10, 1, 0.98); border-top: 1px solid var(--border); max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.mobileOpen { max-height: 400px; }
+.mobileLink { font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-secondary); padding: 1rem 2rem; border-bottom: 1px solid var(--border); transition: var(--transition); }
+.mobileLink:hover { color: var(--accent-primary); background: rgba(0, 255, 65, 0.05); opacity: 1; }
+@media (max-width: 768px) {
+  .links, .cta { display: none; }
+  .hamburger { display: flex; }
+  .mobileMenu { display: flex; }
+  .navbar { padding: 1rem 1.25rem; }
+}
