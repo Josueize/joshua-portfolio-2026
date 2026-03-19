@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
+import photo from '../photo.jpg';
 
 function About() {
   const facts = [
@@ -18,7 +19,7 @@ function About() {
           <div className={styles.left}>
             <div className={styles.avatarWrapper}>
               <div className={styles.avatar}>
-                <span className={styles.avatarInitials}>JO</span>
+                <img src={photo} alt="Joshua Omogiate" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
               </div>
               <div className={styles.avatarGlow} />
             </div>
