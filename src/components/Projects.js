@@ -5,8 +5,10 @@ import styles from './Projects.module.css';
 import cryptoiqImg from '../cryptoiq.png';
 import jobtrackrImg from '../jobtrackr.png';
 import careerpulseImg from '../careerpulse.png';
+import cachosnaturaisImg from '../cachosnaturais.png';
+import scriptforgeImg from '../scriptforge.png';
 
-// Array of project data — update links and descriptions here
+// Array of project data — add or remove projects here
 const projectsData = [
   {
     id: 1,
@@ -39,6 +41,29 @@ const projectsData = [
     github: 'https://github.com/Josueize/careerpulse',
     image: careerpulseImg,
     category: 'Fullstack',
+    highlight: false,
+  },
+  {
+    id: 4,
+    name: 'Cachos Naturais',
+    tagline: 'Luxury hair salon website for Mônica Santos',
+    description: 'A premium beauty salon website built for Cachos Naturais — Mônica Santos. Features service listings, WhatsApp booking integration, Instagram feed, client testimonials, and Stripe payment processing.',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express', 'Stripe API'],
+    github: 'https://pages.github.com',
+    demo: 'https://cachosmoninaturais.com.br',
+    image: cachosnaturaisImg,
+    category: 'Fullstack',
+    highlight: false,
+  },
+  {
+    id: 5,
+    name: 'ScriptForge',
+    tagline: 'AI-powered multi-platform content generation',
+    description: 'A multi-agent content repurposing platform where a content strategist enters one idea and every publish-ready asset for every channel is generated automatically — YouTube scripts, LinkedIn posts, X/Twitter threads and more.',
+    technologies: ['React', 'Node.js', 'AI APIs', 'JavaScript', 'REST API'],
+    github: 'https://github.com/Josueize/scriptforge',
+    image: scriptforgeImg,
+    category: 'AI / Fullstack',
     highlight: false,
   },
 ];
@@ -80,11 +105,16 @@ function ProjectCard({ project }) {
         ))}
       </div>
 
-      {/* Links to GitHub repository */}
+      {/* Links to GitHub and live demo */}
       <div className={styles.cardLinks}>
         <a href={project.github} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
           GitHub ↗
         </a>
+        {project.demo && (
+          <a href={project.demo} target="_blank" rel="noopener noreferrer" className={`${styles.linkBtn} ${styles.linkBtnPrimary}`}>
+            Live Demo ↗
+          </a>
+        )}
       </div>
     </article>
   );
