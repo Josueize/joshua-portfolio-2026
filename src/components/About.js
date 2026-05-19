@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
-import photo from '../photos.jpg';
+import photo from '../photo.jpg';
 
 function About() {
   const facts = [
