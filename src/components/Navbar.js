@@ -41,11 +41,7 @@ function Navbar({ scrolled }) {
         </a>
 
         {/* Hamburger button for mobile */}
-        <button
-          className={`${styles.hamburger} ${menuOpen ? styles.open : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
+        <button className={`${styles.hamburger} ${menuOpen ? styles.open : ''}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           <span /><span /><span />
         </button>
       </div>
@@ -53,24 +49,9 @@ function Navbar({ scrolled }) {
       {/* Mobile dropdown menu */}
       <div className={`${styles.mobileMenu} ${menuOpen ? styles.mobileOpen : ''}`}>
         {navLinks.map((link) => (
-          
-            key={link.label}
-            href={link.href}
-            className={styles.mobileLink}
-            onClick={() => setMenuOpen(false)}
-          >
-            {link.label}
-          </a>
+          <a key={link.label} href={link.href} className={styles.mobileLink} onClick={() => setMenuOpen(false)}>{link.label}</a>
         ))}
-        
-          href="https://github.com/Josueize"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.mobileLink}
-          onClick={() => setMenuOpen(false)}
-        >
-          GitHub ↗
-        </a>
+        <a href="https://github.com/Josueize" target="_blank" rel="noopener noreferrer" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>GitHub ↗</a>
       </div>
     </nav>
   );
